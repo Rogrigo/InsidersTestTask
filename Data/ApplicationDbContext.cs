@@ -9,9 +9,9 @@ namespace InsidersTestTask.Data
         {
             
         }
-        DbSet<User> Users { get; set; }
-        DbSet<CryptoInfo> CryptoInfos { get; set; }
-        DbSet<UserCrypto> UserCryptos { get; set; }
+        public DbSet<User> Users { get; set; }
+        public DbSet<CryptoInfo> CryptoInfos { get; set; }
+        public DbSet<UserCrypto> UserCryptos { get; set; }
 
         protected override void OnModelCreating(ModelBuilder modelBuilder)
         {
