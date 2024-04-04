@@ -22,11 +22,12 @@ namespace InsidersTestTask.Services
             if (response.IsSuccessStatusCode)
             {
                 var content = await response.Content.ReadAsStringAsync();
-                var apiResponse = JsonConvert.DeserializeObject<CryptoApiResponse>(content);
-                return apiResponse != null ? new List<CryptoDTO> { apiResponse.Data } : new List<CryptoDTO>();
+                var apiResponse = JsonConvert.DeserializeObject<CryptoApiResponseToGetAll>(content);
+                return apiResponse?.Data ?? new List<CryptoDTO>();
             }
             return new List<CryptoDTO>();
         }
+
 
         public async Task<CryptoDTO> GetCryptoByIdFromApiAsync(string id)
         {

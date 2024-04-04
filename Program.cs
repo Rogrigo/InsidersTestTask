@@ -1,4 +1,6 @@
 using InsidersTestTask.Data;
+using InsidersTestTask.Interfaces;
+using InsidersTestTask.Repository;
 using InsidersTestTask.Services;
 using Microsoft.EntityFrameworkCore;
 
@@ -9,6 +11,8 @@ builder.Services.AddControllers();
 builder.Services.AddHttpClient();
 builder.Services.AddEndpointsApiExplorer();
 builder.Services.AddSwaggerGen();
+builder.Services.AddScoped<ICryptoRepository, CryptoRepository>();
+
 builder.Services.AddDbContext<ApplicationDbContext>(options =>
 {
     options.UseSqlServer(builder.Configuration.GetConnectionString("DefaultConnection"));
