@@ -1,0 +1,25 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 17
+VisualStudioVersion = 17.5.33530.505
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "InsidersTestTask", "InsidersTestTask.csproj", "{305D2678-41DA-42C7-A701-3BD3B0E0494B}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{305D2678-41DA-42C7-A701-3BD3B0E0494B}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{305D2678-41DA-42C7-A701-3BD3B0E0494B}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{305D2678-41DA-42C7-A701-3BD3B0E0494B}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{305D2678-41DA-42C7-A701-3BD3B0E0494B}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {E3B2017E-6650-4A14-87CF-1DA718B4FC30}
+	EndGlobalSection
+EndGlobal
